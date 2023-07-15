@@ -13,7 +13,7 @@ def logstamp_to_datetime(datestr):
     hour = int(time_list[0])
     minutes = int(time_list[1])
     seconds = int(time_list[2])
-    return dt(year, month, day, hour, minutes, seconds)
+    return datetime(year, month, day, hour, minutes, seconds)
 
 
 # >>>> The code below will call your function and print the results

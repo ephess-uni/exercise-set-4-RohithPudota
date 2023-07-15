@@ -14,9 +14,9 @@ FILENAME = get_data_file_path('messages.log')
 
 
 def num_shutdowns(logfile):
-    in_file = open(logfile, 'r')
+    infile = open(logfile, 'r')
     output = []
-    for i in in_file.readlines():
+    for i in infile.readlines():
         if 'Shutdown complete' in i:
             output.append(i)
     return len(output)
